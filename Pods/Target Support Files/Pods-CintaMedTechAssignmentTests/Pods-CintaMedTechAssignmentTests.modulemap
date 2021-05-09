@@ -1,0 +1,6 @@
+framework module Pods_CintaMedTechAssignmentTests {
+  umbrella header "Pods-CintaMedTechAssignmentTests-umbrella.h"
+
+  export *
+  module * { export * }
+}

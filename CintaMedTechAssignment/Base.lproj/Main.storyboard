@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097.2" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="M9Y-vO-VR5">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="os0-IS-cDL">
+            <objects>
+                <viewController id="M9Y-vO-VR5" customClass="ViewController" customModule="CintaMedTechAssignment" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="fkv-BH-uAe">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="P9A-z4-jpb" userLabel="m_cPickedImg">
+                                <rect key="frame" x="16" y="186.5" width="382" height="404"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fug-Ow-0Hq" userLabel="m_cSourcebtn">
+                                <rect key="frame" x="165.5" y="100" width="83" height="62.5"/>
+                                <state key="normal" image="Icon"/>
+                                <connections>
+                                    <action selector="onSourcebtn_Click:" destination="M9Y-vO-VR5" eventType="touchUpInside" id="TuA-ro-ihy"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="fug-Ow-0Hq" firstAttribute="width" secondItem="fkv-BH-uAe" secondAttribute="width" multiplier="0.2" id="8Mt-pV-Yjy"/>
+                            <constraint firstItem="fug-Ow-0Hq" firstAttribute="centerX" secondItem="fkv-BH-uAe" secondAttribute="centerX" id="Jua-L5-hJT"/>
+                            <constraint firstItem="P9A-z4-jpb" firstAttribute="height" secondItem="fkv-BH-uAe" secondAttribute="height" multiplier="0.450893" id="S0I-nQ-Jj8"/>
+                            <constraint firstItem="P9A-z4-jpb" firstAttribute="top" secondItem="fug-Ow-0Hq" secondAttribute="bottom" constant="24" id="VyJ-Wm-z2Q"/>
+                            <constraint firstItem="P9A-z4-jpb" firstAttribute="leading" secondItem="9FA-OP-y75" secondAttribute="leading" constant="16" id="XsD-45-v2W"/>
+                            <constraint firstItem="9FA-OP-y75" firstAttribute="trailing" secondItem="P9A-z4-jpb" secondAttribute="trailing" constant="16" id="enj-H7-shd"/>
+                            <constraint firstItem="fug-Ow-0Hq" firstAttribute="height" secondItem="fkv-BH-uAe" secondAttribute="height" multiplier="0.07" id="mKa-0D-RYF"/>
+                            <constraint firstItem="fug-Ow-0Hq" firstAttribute="top" secondItem="9FA-OP-y75" secondAttribute="top" constant="56" id="wkT-r0-RtM"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="9FA-OP-y75"/>
+                    </view>
+                    <connections>
+                        <outlet property="m_cPickedImg" destination="P9A-z4-jpb" id="aek-Pr-XYO"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="PJy-0e-6DS" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-271" y="37"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Icon" width="128" height="128"/>
+    </resources>
+</document>
