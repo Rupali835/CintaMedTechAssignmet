@@ -5,7 +5,7 @@ A camera view controller with custom image picker and image cropping.
 
 **Features:- **
 
-1. ront facing and rear facing camera
+1. Front facing and rear facing camera
 2. Simple and clean look
 3. Custom image picker with permission checking
 4. Image cropping
